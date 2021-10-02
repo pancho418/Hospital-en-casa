@@ -1,0 +1,9 @@
+﻿@page
+@model HospiEnCasa.App.Frontend.Pages.DetailsModel
+@{
+}
+<h1>@Model.Paciente.Nombre @Model.Paciente.Apellidos</h1>
+<p>Médico: @Model.Paciente.Medico</p>
+<p>Enfermera: @Model.Paciente.Enfermera</p>
+<p>Familiar: @Model.Paciente.Familiar</p>
+<a asp-page="./Paciente">Lista de Pacientes</a>

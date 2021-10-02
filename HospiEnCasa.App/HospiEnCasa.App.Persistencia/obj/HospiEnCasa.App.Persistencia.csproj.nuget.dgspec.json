@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj": {}
+    "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj": {}
   },
   "projects": {
-    "C:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj": {
+    "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj",
+        "projectUniqueName": "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj",
         "projectName": "HospiEnCasa.App.Dominio",
-        "projectPath": "C:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\panch\\.nuget\\packages\\",
-        "outputPath": "C:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\obj\\",
+        "projectPath": "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj",
+        "packagesPath": "/Users/mauricioroa/.nuget/packages/",
+        "outputPath": "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Dominio/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\panch\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/mauricioroa/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -35,28 +35,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[5.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -72,21 +50,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.413/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj": {
+    "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj",
+        "projectUniqueName": "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj",
         "projectName": "HospiEnCasa.App.Persistencia",
-        "projectPath": "C:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\panch\\.nuget\\packages\\",
-        "outputPath": "C:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\obj\\",
+        "projectPath": "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj",
+        "packagesPath": "/Users/mauricioroa/.nuget/packages/",
+        "outputPath": "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Persistencia/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\panch\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/mauricioroa/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -97,8 +75,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj": {
-                "projectPath": "C:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj"
+              "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj": {
+                "projectPath": "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj"
               }
             }
           }
@@ -148,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.413/RuntimeIdentifierGraph.json"
         }
       }
     }
