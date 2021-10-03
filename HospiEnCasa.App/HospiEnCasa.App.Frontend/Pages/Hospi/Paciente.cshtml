@@ -13,6 +13,7 @@
             <th>Familiar Designado</th>
             <th></th>
             <th></th>
+            <th></th>
         </tr>
     </thead>
 
@@ -25,14 +26,20 @@
                 <td>@paciente.Enfermera</td>
                 <td>@paciente.Familiar</td>
                 <td>
-                    <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-idPaciente="@paciente.Id">
+                    <a class="btn btn-success table-btn" asp-page="./Details" asp-route-idPaciente="@paciente.Id">
                         <i class="fas fa-info-circle"></i>
                     </a>
                 </td>
                 <td>
-                    <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-idPaciente="@paciente.Id">
-                        <i class="fas fa-address-book fa-lg" aria-hidden="true"></i>
+                    <a class="btn btn-warning table-btn" asp-page="./Edit" asp-route-idPaciente="@paciente.Id">
+                        <i class="fas fa-user-edit" aria-hidden="true"></i>
                     </a>
+                </td>
+                <td>
+                    <form method="get">
+                        <input type="hidden" asp-for="@paciente.Id" name="idPaciente"/>
+                        <button type="submit" class="btn btn-danger table-btn"><i class="fas fa-trash-alt" aria-hidden="true"></i></button>
+                    </form>
                 </td>
             </tr>
         }

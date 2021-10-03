@@ -13,7 +13,7 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("Hello World!");
             // AddPaciente();
             // BuscarPaciente(1);
-            TodosPacientes();
+            // TodosPacientes();
         }
 
         private static void AddPaciente()

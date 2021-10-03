@@ -5802,11 +5802,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mauricioroa/Desktop/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj",
+      "projectUniqueName": "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj",
       "projectName": "HospiEnCasa.App.Consola",
-      "projectPath": "/Users/mauricioroa/Desktop/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj",
+      "projectPath": "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj",
       "packagesPath": "/Users/mauricioroa/.nuget/packages/",
-      "outputPath": "/Users/mauricioroa/Desktop/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Consola/obj/",
+      "outputPath": "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Consola/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mauricioroa/.nuget/NuGet/NuGet.Config"
@@ -5820,11 +5820,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/Users/mauricioroa/Desktop/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj": {
-              "projectPath": "/Users/mauricioroa/Desktop/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj"
+            "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj": {
+              "projectPath": "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj"
             },
-            "/Users/mauricioroa/Desktop/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj": {
-              "projectPath": "/Users/mauricioroa/Desktop/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj"
+            "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj": {
+              "projectPath": "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj"
             }
           }
         }

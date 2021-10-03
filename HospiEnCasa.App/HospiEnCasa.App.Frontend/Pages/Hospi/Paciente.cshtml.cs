@@ -13,11 +13,26 @@ namespace HospiEnCasa.App.Frontend.Pages
     {
         private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente(new Persistencia.AppContext());
 
+        // Atributos
         public IEnumerable<Paciente> Pacientes {get; set;}
 
-        public void OnGet()
+        public Paciente Paciente { get; set; }
+
+        // Metodos
+        public void OnGet(int idPaciente)
         {
-            Pacientes = _repoPaciente.GetAllPacientes();
+            Pacientes = _repoPaciente.GetAllPacientes(); 
+
+            Paciente = _repoPaciente.GetPaciente(idPaciente);
+            if (Paciente == null)
+            {
+                RedirectToPage("./NotFound");
+            }
+            else
+            {
+                _repoPaciente.DeletePaciente(Paciente.Id);
+                Page();
+            }           
         }
     }
 }

@@ -13,20 +13,28 @@ namespace HospiEnCasa.App.Frontend.Pages
     {
         private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente(new Persistencia.AppContext());
 
-        public Paciente Paciente { get; set; }
+        // Atributos
+        public Paciente paciente { get; set; }
 
+        // Constructor
+        // public EditModel(IRepositorioPaciente repoPaciente)
+        // {
+        //     repoPaciente = _repoPaciente;
+        // }
+
+        // Metodos
         public IActionResult OnGet(int? idPaciente)
         {
             if (idPaciente.HasValue)
             {
-                Paciente = _repoPaciente.GetPaciente(idPaciente.Value);
+                paciente = _repoPaciente.GetPaciente(idPaciente.Value);
             }
             else
             {
-                Paciente = new Paciente();
+                paciente = new Paciente();
             }
 
-            if (Paciente == null)
+            if (paciente == null)
             {
                 return RedirectToPage("./NotFound");
             }
@@ -34,24 +42,27 @@ namespace HospiEnCasa.App.Frontend.Pages
             {
                 return Page();
             }
-            
+
         }
 
-        public IActionResult OnPost()
+        public IActionResult OnPost(Paciente paciente)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return Page();
-            }
-            if (Paciente.Id > 0)
-            {
-                Paciente = _repoPaciente.UpdatePaciente(Paciente);
+                if (paciente.Id > 0)
+                {
+                    paciente = _repoPaciente.UpdatePaciente(paciente);
+                }
+                else
+                {
+                    _repoPaciente.AddPaciente(paciente);
+                }
+                return RedirectToPage("./Paciente");
             }
             else
             {
-                _repoPaciente.AddPaciente(Paciente);
+                return Page();
             }
-            return Page();
         }
     }
 }

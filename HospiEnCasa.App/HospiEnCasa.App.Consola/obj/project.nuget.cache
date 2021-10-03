@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jGxu03sVsFCsOmGHoCxYKJUhfR6/GjupNMyEdOfzaRdek61aglDgAoojG/2TPBGGSa58iX3DTITTBAHxD6djaw==",
+  "dgSpecHash": "tvaDxfkl0twISXkxCv/3mggY/8oZGdbhcs20nqyYZ1nMfyXjOkr2Cl8lVAo0jtvqawvB0UPsTGRHo/JFkNyCpg==",
   "success": true,
-  "projectFilePath": "/Users/mauricioroa/Desktop/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj",
+  "projectFilePath": "/Users/mauricioroa/Desktop/Ciclo-3-Mision-TIC/Hospital-en-casa/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj",
   "expectedPackageFiles": [
     "/Users/mauricioroa/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/mauricioroa/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
