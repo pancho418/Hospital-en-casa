@@ -13,6 +13,7 @@ namespace HospiEnCasa.App.Frontend.Pages
     {
         private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente(new Persistencia.AppContext());
 
+        [BindProperty]
         // Atributos
         public Paciente paciente { get; set; }
 
