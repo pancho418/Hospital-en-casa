@@ -18,6 +18,48 @@
         <input asp-for="paciente.Apellidos" class="form-control">
         <span class="text-danger" asp-validation-for="paciente.Apellidos"></span>
     </div>
+        <div class="form-group">
+        <label asp-for="paciente.Genero"></label>
+        <select asp-for="paciente.Genero" class="form-control">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Bisexual">Bisexual</option>
+            <option value="Intersexual">Intersexual</option>
+            <option value="Pansexual">Pansexual</option>
+            <option value="Transexual">Transexual</option>
+        </select>
+        <span class="text-danger" asp-validation-for="paciente.Genero"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="paciente.NumeroTelefono"></label>
+        <input asp-for="paciente.NumeroTelefono" class="form-control">
+        <span class="text-danger" asp-validation-for="paciente.NumeroTelefono"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="paciente.Direccion"></label>
+        <input asp-for="paciente.Direccion" class="form-control">
+        <span class="text-danger" asp-validation-for="paciente.Direccion"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="paciente.FechaNacimiento"></label>
+        <input asp-for="paciente.FechaNacimiento" class="form-control">
+        <span class="text-danger" asp-validation-for="paciente.FechaNacimiento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="paciente.Ciudad"></label>
+        <input asp-for="paciente.Ciudad" class="form-control">
+        <span class="text-danger" asp-validation-for="paciente.Ciudad"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="paciente.Latitud"></label>
+        <input asp-for="paciente.Latitud" class="form-control">
+        <span class="text-danger" asp-validation-for="paciente.Latitud"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="paciente.Longitud"></label>
+        <input asp-for="paciente.Longitud" class="form-control">
+        <span class="text-danger" asp-validation-for="paciente.Longitud"></span>
+    </div>
     <button type="submit" class="btn btn-primary">Grabar</button>
 </form>
 <br>

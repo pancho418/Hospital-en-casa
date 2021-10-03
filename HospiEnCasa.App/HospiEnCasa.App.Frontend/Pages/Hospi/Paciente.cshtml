@@ -6,13 +6,21 @@
 
 <h1>@ViewData["Title"]</h1>
 <br>
+<form method="get">
+    <div class="form-group">
+        <p>
+            Paciente: <input type="text" name="filtroBusqueda" asp-for="FiltroBusqueda" />
+            <input type="submit" value="Filtrar" />
+        </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>
+            <th>Id</th>
             <th>Nombre</th>
-            <th>Médico</th>
-            <th>Enfermera</th>
-            <th>Familiar Designado</th>
+            <th>Telefóno</th>
+            <th>Dirección</th>
             <th></th>
             <th></th>
             <th></th>
@@ -23,10 +31,10 @@
         @foreach (var paciente in Model.Pacientes)
         {
             <tr>
+                <td>@paciente.Id</td>
                 <td>@paciente.Nombre @paciente.Apellidos</td>
-                <td>@paciente.Medico</td>
-                <td>@paciente.Enfermera</td>
-                <td>@paciente.Familiar</td>
+                <td>@paciente.NumeroTelefono</td>
+                <td>@paciente.Direccion</td>
                 <td>
                     <a class="btn btn-success table-btn" asp-page="./Details" asp-route-idPaciente="@paciente.Id">
                         <i class="fas fa-info-circle"></i>
@@ -40,7 +48,7 @@
                 <td>
                     <form method="get">
                         <input type="hidden" asp-for="@paciente.Id" name="idPaciente"/>
-                        <button type="submit" class="btn btn-danger table-btn"><i class="fas fa-trash-alt" aria-hidden="true"></i></button>
+                        <button type="submit" class="btn btn-danger table-btn" onclick="confirm('¿Esta seguro de eliminar este paciente?');"><i class="fas fa-trash-alt" aria-hidden="true"></i></button>
                     </form>
                 </td>
             </tr>

@@ -14,14 +14,21 @@ namespace HospiEnCasa.App.Frontend.Pages
         private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente(new Persistencia.AppContext());
 
         // Atributos
+        [BindProperty(SupportsGet = true)]
+        public string FiltroBusqueda { get; set; }
+
         public IEnumerable<Paciente> Pacientes {get; set;}
 
         public Paciente Paciente { get; set; }
 
         // Metodos
-        public void OnGet(int idPaciente)
+        public void OnGet(int idPaciente, string filtroBusqueda)
         {
-            Pacientes = _repoPaciente.GetAllPacientes(); 
+            // Pacientes = _repoPaciente.GetAllPacientes();
+
+            FiltroBusqueda = filtroBusqueda;
+
+            Pacientes = _repoPaciente.GetPacientePorFiltro(filtroBusqueda); 
 
             Paciente = _repoPaciente.GetPaciente(idPaciente);
             if (Paciente == null)

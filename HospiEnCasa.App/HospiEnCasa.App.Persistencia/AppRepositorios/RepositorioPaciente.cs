@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using HospiEnCasa.App.Dominio;
@@ -72,6 +73,23 @@ namespace HospiEnCasa.App.Persistencia
             }
 
             return pacienteEncontrado;
+        }
+
+        public IEnumerable<Paciente> GetPacientePorFiltro(string filtro = null) // el parámetro es opcional 
+        {
+            var pacientes = GetAllPacientes(); // Obtiene todos los saludos
+
+            if (pacientes != null)  //Si se tienen saludos
+            {
+                if (!String.IsNullOrEmpty(filtro)) // Si el filtro tiene algun valor
+                {
+                    pacientes = pacientes.Where(s => s.Nombre.Contains(filtro)); 
+                    /// <summary>
+                    /// Filtra los mensajes que contienen el filtro
+                    /// </summary>
+                }
+            }
+            return pacientes;
         }
     }
 }

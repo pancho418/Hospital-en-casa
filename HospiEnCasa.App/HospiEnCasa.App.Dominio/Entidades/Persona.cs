@@ -13,7 +13,11 @@ namespace HospiEnCasa.App.Dominio
 
         [Required(ErrorMessage = "El campo {0} es requerido"), StringLength(50)]
         public string Apellidos { get; set; }
+
+        [Required(ErrorMessage = "El campo {0} es requerido"), StringLength(50)]
         public string NumeroTelefono { get; set; }
+
+        [Required]
         public Genero Genero { set; get; }
 
     }

@@ -5,7 +5,13 @@
 }
 
 <h1>@Model.Paciente.Nombre @Model.Paciente.Apellidos</h1>
-<p>Médico: @Model.Paciente.Medico</p>
-<p>Enfermera: @Model.Paciente.Enfermera</p>
-<p>Familiar: @Model.Paciente.Familiar</p>
+<br>
+<p><strong>Id:</strong> @Model.Paciente.Id</p>
+<p><strong>Género:</strong> @Model.Paciente.Genero</p>
+<p><strong>Teléfono:</strong> @Model.Paciente.NumeroTelefono</p>
+<p><strong>Fecha de Nacimiento:</strong> @Model.Paciente.FechaNacimiento</p>
+<p><strong>Dirección:</strong> @Model.Paciente.Direccion</p>
+<p><strong>Ciudad:</strong> @Model.Paciente.Ciudad</p>
+<p><strong>Latitud:</strong> @Model.Paciente.Latitud</p>
+<p><strong>Longitud:</strong> @Model.Paciente.Longitud</p>
 <a asp-page="./Paciente">Lista de Pacientes</a>
