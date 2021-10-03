@@ -1,8 +1,10 @@
 ﻿@page
 @model HospiEnCasa.App.Frontend.Pages.EditModel
 @{
+    ViewData["Title"] = "Edición del Paciente";
 }
-<h2>Edición del Paciente: @Model.paciente.Nombre @Model.paciente.Apellidos</h2>
+
+<h2>@ViewData["Title"]: @Model.paciente.Nombre @Model.paciente.Apellidos</h2>
 <br>
 <form method="post">
     <input type="hidden" asp-for="paciente.Id"/>

@@ -1,7 +1,9 @@
 ﻿@page
 @model HospiEnCasa.App.Frontend.Pages.DetailsModel
 @{
+    ViewData["Title"] = "Detalles del Paciente";
 }
+
 <h1>@Model.Paciente.Nombre @Model.Paciente.Apellidos</h1>
 <p>Médico: @Model.Paciente.Medico</p>
 <p>Enfermera: @Model.Paciente.Enfermera</p>
